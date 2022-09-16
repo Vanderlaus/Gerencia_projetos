@@ -1,0 +1,33 @@
+Vocês deverão criar um cadastro de livros. O programa deve funcionar de forma infinita, utilizando o while como laço de 
+repetição, parando apenas quando o usuário desejar. O usuário deve ter 4 opções, criar um novo livro, visualizar os livros
+criados, deletar um livro já criado e finalizar o laço de repetição (encerar o programa).
+
+O programa deve iniciar mostrando as funções existentes e perguntado ao usuário qual das 4 opções ele quer usar. O programa
+deve fazer a verificação para avaliar se o digitado pelo usuário é uma das funções existentes.
+
+Para salvar os dados deve-se utilizar dicionários dentro de uma lista.
+
+
+Opção criar livro:
+    - O programa deve perguntar as informações cadastrais, fazer a verificação do ISBN e, caso esteja tudo nos conformes,
+    adicionar o livro mostrando uma mensagem de sucesso;
+    - Caso tenha algum problema com o ISBN, o código deverá mostrar uma mensagem de erro e não cadastrar o livro, mostrando
+    o menu novamente;
+
+Opção listar livro:
+    - 
+
+
+requisitos:
+- Escalabilidade (Que possa ser infinitamente);
+- Legibilidade e organização do código (variáveis com nomes coerentes, sem espaçamentos desnecessários);
+- Comentários explicando o código;
+- NÃO utilizar funções e classes;
+- Deve-se utilizar while;
+- Os dados cadastrais do livro devem ser: 
+  - Nome do livro
+  - Editora
+  - Autor
+  - Genêro
+  - Ano de publicação
+  - ISBN (Deve possuir um método de verificação)
