@@ -1,0 +1,18 @@
+Vocês deverão criar um cadastro de livros. O programa deve funcionar de forma infinita, utilizando o while como laço de 
+repetição, parando apenas quando o usuário desejar. O usuário deve ter 4 opções, criar um novo livro, visualizar os livros
+criados, deletar um livro já criado e finalizar o laço de repetição (encerar o programa).
+O programa deve iniciar mostrando as funções existentes e perguntado ao usuário.
+
+requisitos:
+- Escalabilidade (Que possa ser infinitamente);
+- Legibilidade e organização do código (variáveis com nomes coerentes, sem espaçamentos desnecessários);
+- Comentários explicando o código;
+- NÃO utilizar funções e classes;
+- Deve-se utilizar while;
+- Os dados cadastrais do licro devem ser: 
+  - Nome do livro
+  - Editora
+  - Autor
+  - Genêro
+  - Ano de publicação
+  - ISBN (Deve possuir um método de verificação)
