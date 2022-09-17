@@ -6,9 +6,9 @@ livros = []
 poli = "="*50
 espaco = " "*21
 print(f"{poli}\n{espaco}LIVRARIA\n{poli}")
-print(f"{espaco}MENU{espaco}".center(50,"="))
 
 while True:
+    print(f"{espaco}MENU{espaco}".center(50,"="))
     print(f"(1) Cadastro de Livros\n(2) Lista de Livros\n(3) Excluir Livros\n(4) Sair")
     print(poli)
     opcao = input("=> ")
@@ -59,11 +59,26 @@ while True:
 
 
     if opcao == "2":
-        print("Lista de Livros")
+        for i in livros:
+            print(f"Titulo: {i['titulo']} Editora: {i['editora']} Autor: {i['autor']} Genero: {i['genero']} Ano: {i['ano']} ISBN: {i['isbn']}")
+
 
     if opcao == "3":
-        print("Excluir Livros Cadastrados")
-        pass
+        if len(livros) == 0:
+            print(f"{poli}\n******************* LISTA VAZIA ******************\n{poli}")
+        else:
+            for i, v in enumerate(livros):
+                print(f"{i} - {v['titulo']}")
+            while True:
+                indice = input("Digite o indice que voce quer EXCLUIR: ")
+                if not(indice.isnumeric()):
+                    print("Letras não sao validas como opção!")
+                elif int(indice) >= len(livros):
+                    print("Indice nao existe!")
+                else:
+                    break
+            livros.pop(int(indice))
+
 
     if opcao == "4":
         break
