@@ -59,8 +59,11 @@ while True:
 
 
     if opcao == "2":
-        for i in livros:
-            print(f"Titulo: {i['titulo']} Editora: {i['editora']} Autor: {i['autor']} Genero: {i['genero']} Ano: {i['ano']} ISBN: {i['isbn']}")
+        if len(livros) == 0:
+            print(f"{poli}\n******************* LISTA VAZIA ******************\n{poli}")
+        else:
+            for i in livros:
+                print(f"Titulo: {i['titulo']} Editora: {i['editora']} Autor: {i['autor']} Genero: {i['genero']} Ano: {i['ano']} ISBN: {i['isbn']}")
 
 
     if opcao == "3":
