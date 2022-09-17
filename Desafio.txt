@@ -1,6 +1,6 @@
 Vocês deverão criar um cadastro de livros. O programa deve funcionar de forma infinita, utilizando o while como laço de 
 repetição, parando apenas quando o usuário desejar. O usuário deve ter 4 opções, criar um novo livro, visualizar os livros
-criados, deletar um livro já criado e finalizar o laço de repetição (encerar o programa).
+criados, deletar um livro já criado e finalizar o laço de repetição (encerrar o programa).
 
 O programa deve iniciar mostrando as funções existentes e perguntado ao usuário qual das 4 opções ele quer usar. O programa
 deve fazer a verificação para avaliar se o digitado pelo usuário é uma das funções existentes.
