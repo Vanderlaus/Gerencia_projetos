@@ -1,3 +1,4 @@
+# Teste dev de commit 
 from time import sleep
 import string
 
@@ -14,7 +15,7 @@ while True:
     opcao = input("=> ")
 
     if not(opcao.isnumeric()):
-        print("Letras não sao validas como opção!")
+        print("Letras não são válidas como opção!")
         pass
     if opcao == "1":
         titulo = str(input("Digite os seguintes dados do livro\nTítulo: "))
