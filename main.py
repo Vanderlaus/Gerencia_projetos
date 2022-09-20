@@ -16,7 +16,7 @@ while True:
     if not(opcao.isnumeric()):
         print("Letras não sao validas como opção!")
         
-    if opcao == "1":
+    elif opcao == "1":
         titulo = str(input("Digite os seguintes dados do livro\nTítulo: "))
         editora = str(input("Editora: "))
         autor = str(input("Autor: "))
@@ -59,7 +59,7 @@ while True:
             else:
                 print("Deu erro!")
 
-    if opcao == "2":
+    elif opcao == "2":
         if len(livros) == 0:
             print(f"{poli}\n******************* LISTA VAZIA ******************\n{poli}")
         else:
@@ -67,7 +67,7 @@ while True:
                 print(f"Titulo: {i['titulo']} Editora: {i['editora']} Autor: {i['autor']} Genero: {i['genero']} Ano: {i['ano']} ISBN: {i['isbn']}")
 
 
-    if opcao == "3":
+    elif opcao == "3":
         if len(livros) == 0:
             print(f"{poli}\n******************* LISTA VAZIA ******************\n{poli}")
         else:
@@ -83,8 +83,6 @@ while True:
                     break
             livros.pop(int(indice))
 
-    if opcao == "4":
+    elif opcao == "4":
         break
     
-
-
