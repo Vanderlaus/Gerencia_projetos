@@ -65,7 +65,7 @@ while True:
         else:
             for i in livros:
                 print(f"Titulo: {i['titulo']} Editora: {i['editora']} Autor: {i['autor']} Genero: {i['genero']} Ano: {i['ano']} ISBN: {i['isbn']}")
-
+                sleep(1)
 
     elif opcao == "3":
         if len(livros) == 0:
