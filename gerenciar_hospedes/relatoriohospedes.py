@@ -4,7 +4,6 @@
 hospedes = [{"nome": 'Daniel', "cpf": '23232', "telefone": '123123'},
             {"nome": 'Thiago', "cpf": '234242', "telefone": '6661623'}]
 
-
 hospedeEncontrado = False
 print(">>> BUSCAR HOSPEDE <<<")
 nomeHospedeDigitado = input("Digite o nome: ").title()
