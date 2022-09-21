@@ -25,5 +25,7 @@ while True:
                     print("Indice nao existe!")
                 else:
                     print("Checkout realizado com sucesso")
+                    hospedes.pop(int(indice))
                     break
-            hospedes.pop(int(indice))
+            
+            
