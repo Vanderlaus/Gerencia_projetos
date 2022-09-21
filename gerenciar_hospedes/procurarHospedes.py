@@ -1,5 +1,5 @@
-hospedes = [{"nome": 'daniel', "cpf": '23232', "telefone": '123123'},
-            {"nome": 'seila', "cpf": '234242', "telefone": '6661623'}]
+hospedes = [{"nome": 'Daniel', "cpf": '23232', "telefone": '123123'},
+            {"nome": 'Josimar', "cpf": '234242', "telefone": '6661623'}]
 
 hospedeEncontrado = False
 nomeHospedeDigitado = input("Digite o nome do hóspede: ")
