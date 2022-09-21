@@ -1,5 +1,5 @@
 hospedes = []
-Dados = {"Nome": '', "cpf": '', "telefone": ''}
+# Dados = {"nome": '', "cpf": '', "telefone": ''}
 
 while True:
     opcao = input()

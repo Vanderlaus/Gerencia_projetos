@@ -1,0 +1,29 @@
+Desenvolva um algoritmo contendo a data atual, que mostre uma saudação, imprima a hora e uma mensagem de boas vindas 
+mostrando a saudação.
+
+Cria um menu de forma infinita que apareça as opções:
+1 -> Fazer Check-In -- Dieter
+O programa deve perguntar as informações cadastrais, Nome/CPF/Telefone
+e perguntar se deseja cadastrar outra pessoa, caso não, voltar ao menu.
+
+2 -> Relatório Hospedes -- Thiago
+Listar os hospedes cadastrados mostrando a tabela com as informações dos hospedes e voltar ao menu.
+
+3 -> Procurar Hospedes -- Daniel
+Procurar o hospede pelo nome e listar somente o hospede digitado e voltar ao menu.
+
+4 -> Fazer Check-Out -- Vander
+Procurar o hospede pelo nome e remover ele da lista, e apresentar a tabela atualizada mostrando o ID nome CPF e 
+telefone indicando que essa pessoa foi removida e mostrando somente os hospedes cadastrados.
+
+5 -> Finalizar Atendimento -- 
+Encerrar o programa.
+
+Crie uma tabela que mostre todos os hóspedes cadastrados com máscara para CPF e máscara para o número de celular.
+
+Além da máscara do CPF e número do celular, crie uma mascara que imprima uma tabela mostrando o ID nome CPF e telefone.
+
+Opções 2, 3 ,4:
+Precisa apresentar a máscara, caso não tenha nenhum hospede cadastrado e essas opções forem selecionadas antes de 
+cadastrar alguma pessoa, retornar que não existe hospede cadastrado e voltar ao menu.
+A pesquisa tem que ser feita pelo nome do hóspede.
