@@ -27,5 +27,8 @@ while True:
                     print("Checkout realizado com sucesso")
                     hospedes.pop(int(indice))
                     break
-            
+
+    elif opcao == "5":
+        print("Atendimento finalizado")
+        break            
             
