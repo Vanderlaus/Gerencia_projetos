@@ -8,6 +8,11 @@
 #### **Projetos**
 
 * Cadastro de Livros
+- [x] Criar Livro
+- [x] Listrar Livro
+- [x] Excluir Livro
+- [x] Verificação ISBN
+
 * Cadastro de Hospedes
 - [ ] Fazer Check-In > Dieter
 - [ ] Relatório Hospedes > Daniel
