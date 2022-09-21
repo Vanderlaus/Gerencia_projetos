@@ -11,7 +11,7 @@ while True:
 #Procurar o hospede pelo nome e remover ele da lista, e apresentar a tabela atualizada mostrando o ID nome CPF e 
 #telefone indicando que essa pessoa foi removida e mostrando somente os hospedes cadastrados.
 
-    elif opcao == "3":
+    elif opcao == "4":
         if len(hospedes) == 0:
             print(f"{poli}\n******************* NÃO HÁ HÓSPEDES ******************\n{poli}")
         else:
