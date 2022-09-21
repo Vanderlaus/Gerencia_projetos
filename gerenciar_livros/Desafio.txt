@@ -3,20 +3,24 @@ repetição, parando apenas quando o usuário desejar. O usuário deve ter 4 op�
 criados, deletar um livro já criado e finalizar o laço de repetição (encerrar o programa).
 
 O programa deve iniciar mostrando as funções existentes e perguntado ao usuário qual das 4 opções ele quer usar. O programa
-deve fazer a verificação para avaliar se o digitado pelo usuário é uma das funções existentes.
+deve fazer a verificação para avaliar se a opção digitada pelo usuário é uma das funções existentes.
+
+Faça um cabeçalho e rodapé conforme foi visto nas aulas utilizando polimorfismo.
 
 Para salvar os dados deve-se utilizar dicionários dentro de uma lista.
-
 
 Opção criar livro:
     - O programa deve perguntar as informações cadastrais, fazer a verificação do ISBN e, caso esteja tudo nos conformes,
     adicionar o livro mostrando uma mensagem de sucesso;
     - Caso tenha algum problema com o ISBN, o código deverá mostrar uma mensagem de erro e não cadastrar o livro, mostrando
     o menu novamente;
+    - Os dados cadastrais do livro constam nos requisitos abaixo;
 
 Opção listar livro:
-    - 
+    - O programa deve listar os livros cadastrados e seus dados;
 
+Opção excluir livro:
+    - O programa deve listar os livros com índice e apenas o nome do livro e dar opção de deletar um item pelo índice.
 
 requisitos:
 - Escalabilidade (Que possa ser infinitamente);
@@ -31,3 +35,5 @@ requisitos:
   - Genêro
   - Ano de publicação
   - ISBN (Deve possuir um método de verificação)
+
+  

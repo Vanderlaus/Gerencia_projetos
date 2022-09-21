@@ -10,64 +10,71 @@ print(f"{poli}\n{espaco}LIVRARIA\n{poli}")
 
 while True:
     print(f"{espaco}MENU{espaco}".center(50,"="))
-    print(f"(1) Cadastro de Livros\n(2) Lista de Livros\n(3) Excluir Livros\n(4) Sair")
+    print("(1) Cadastro de Livros\n(2) Lista de Livros\n(3) Excluir Livros\n(4) Sair")
     print(poli)
     opcao = input("=> ")
 
     if not(opcao.isnumeric()):
+<<<<<<< HEAD:main.py
         print("Letras não são válidas como opção!")
         pass
     if opcao == "1":
+=======
+        print("Letras não sao validas como opção!")
+        
+    elif opcao == "1":
+>>>>>>> main:gerenciar_livros/main.py
         titulo = str(input("Digite os seguintes dados do livro\nTítulo: "))
         editora = str(input("Editora: "))
         autor = str(input("Autor: "))
         genero = str(input("Gênero: "))
         ano = int(input("Ano Publicação: "))
-        isbn = input("ISBN: ")
-
-        dicionario = {
-            'titulo': titulo, 
-            'editora': editora,
-            'autor': autor,
-            'genero': genero,
-            'ano': ano,
-            'isbn': isbn
-        }
-
-        res = []
-        for i in isbn:
-            if i in string.digits:
-                res.append(int(i))
-
-        if 1 and (isbn[-1] in 'Xx'):
-            res.append(10)
-
-        if len(res) != 10:
-            hasError = True
-
-        sum = 0
-        for pos, dig in enumerate(res[:-1]):
-            sum += ((pos + 1) * dig)
-
-        hasError = sum % 11 == res[-1]
-
-        if hasError:
-            livros.append(dicionario)
-            print("Deu certo!")
         
-        else:
-            print("Deu erro!")
+        while True:
+            isbn = input("ISBN: ")
+                    
+            res = []
+            for i in isbn:
+                if i in string.digits:
+                    res.append(int(i))
 
+            if 1 and (isbn[-1] in 'Xx'):
+                res.append(10)
 
-    if opcao == "2":
+            if len(res) != 10:
+                hasError = True
+
+            sum = 0
+            for pos, dig in enumerate(res[:-1]):
+                sum += ((pos + 1) * dig)
+
+            hasError = sum % 11 == res[-1]
+
+            if hasError:
+                dicionario = {
+                    'titulo': titulo, 
+                    'editora': editora,
+                    'autor': autor,
+                    'genero': genero,
+                    'ano': ano,
+                    'isbn': isbn
+                }
+                livros.append(dicionario)
+                print("Deu certo!")
+                break
+            
+            else:
+                print("Deu erro!")
+
+    elif opcao == "2":
         if len(livros) == 0:
             print(f"{poli}\n******************* LISTA VAZIA ******************\n{poli}")
         else:
             for i in livros:
                 print(f"Titulo: {i['titulo']} Editora: {i['editora']} Autor: {i['autor']} Genero: {i['genero']} Ano: {i['ano']} ISBN: {i['isbn']}")
+                sleep(1)
 
-
-    if opcao == "3":
+    elif opcao == "3":
         if len(livros) == 0:
             print(f"{poli}\n******************* LISTA VAZIA ******************\n{poli}")
         else:
@@ -83,9 +90,6 @@ while True:
                     break
             livros.pop(int(indice))
 
-
-    if opcao == "4":
+    elif opcao == "4":
         break
     
-
-
