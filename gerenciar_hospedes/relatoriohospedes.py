@@ -1,14 +1,21 @@
-Dados = {"nome": 'Thiago', "cpf": '05334405992', "telefone": '47999753438'}
-hospedes = [Dados]
+# 2 -> Relatório Hospedes -- Thiago
+# Listar os hospedes cadastrados mostrando a tabela com as informações dos hospedes e voltar ao menu.
 
-while True:
-    opcao = input()
-    if opcao:
-        pass
+hospedes = [{"nome": 'Daniel', "cpf": '23232', "telefone": '123123'},
+            {"nome": 'Thiago', "cpf": '234242', "telefone": '6661623'}]
 
-    # if opcao == "2":
-    #     if len in hospedes == 0:
-    #         print("Não há hospedes cadastrados.")
-    #     else:
-    #         for i in hospedes:
-    #             # print(f"{i[]} - {} - {}")
+
+hospedeEncontrado = False
+print(">>> BUSCAR HOSPEDE <<<")
+nomeHospedeDigitado = input("Digite o nome: ").title()
+for hospede in hospedes:
+    if hospede["nome"] == nomeHospedeDigitado:
+        hospedeEncontrado = True
+        print("Nome: " + hospede["nome"] + " CPF: " + hospede["cpf"] + " Telefone: " + hospede["telefone"])
+        break
+
+if hospedeEncontrado == False:
+    print("Não existe hospede registrado com esse nome.")
+
+
+
