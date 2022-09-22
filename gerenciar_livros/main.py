@@ -1,3 +1,4 @@
+# Teste dev de commit 
 from time import sleep
 import string
 
@@ -14,9 +15,15 @@ while True:
     opcao = input("=> ")
 
     if not(opcao.isnumeric()):
+<<<<<<< HEAD:main.py
+        print("Letras não são válidas como opção!")
+        pass
+    if opcao == "1":
+=======
         print("Letras não sao validas como opção!")
         
     elif opcao == "1":
+>>>>>>> main:gerenciar_livros/main.py
         titulo = str(input("Digite os seguintes dados do livro\nTítulo: "))
         editora = str(input("Editora: "))
         autor = str(input("Autor: "))
