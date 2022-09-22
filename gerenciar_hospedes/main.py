@@ -15,7 +15,7 @@ while True:
         if len(hospedes) == 0:
             print(f"{poli}\n******************* NÃO HÁ HÓSPEDES ******************\n{poli}")
         else:
-            for i, v in enumerate():
+            for i, v in enumerate(hospedes):
                 print(f"{i} - {v['nome']}")
             while True:
                 indice = input("Digite o indice do hóspede que deseja fazer o CHECKOUT: ")
