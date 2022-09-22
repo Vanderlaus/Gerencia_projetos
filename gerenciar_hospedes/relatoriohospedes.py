@@ -1,6 +1,3 @@
-# 2 -> Relatório Hospedes -- Thiago
-# Listar os hospedes cadastrados mostrando a tabela com as informações dos hospedes e voltar ao menu.
-
 hospedes = [{"nome": 'Daniel', "cpf": '23232', "telefone": '123123'},
             {"nome": 'Thiago', "cpf": '234242', "telefone": '6661623'}]
 
