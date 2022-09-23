@@ -43,7 +43,7 @@ while True:
             if hasError:
                 print(f"{poli}CPF inválido!!{poli}")
             else: 
-                print(f'{poli}Fim de cadastro{poli}')
+                print(f'{poli}Hospede cadastrado com sucesso!!{poli}')
                 dados = {
                     'nome': varnome, 
                     'cpf': varcpf,
