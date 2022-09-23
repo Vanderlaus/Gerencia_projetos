@@ -1,6 +1,7 @@
 CPFS = ["00000000000","11111111111", "22222222222", "33333333333", "44444444444", 
         "55555555555", "66666666666", "77777777777", "88888888888", "99999999999"]
 hospedes = []
+funcoes = ['1','2','3','4','5']
 poli = "="*50
 espaco = " "*21
 print(f"{poli}\n{espaco}MENU DO MOTEL\n{poli}")
@@ -9,8 +10,12 @@ print(f"{espaco}MENU{espaco}".center(50,"="))
 while True:
     print(f"(1) Fazer check-In\n(2) Relatório Hospedes\n(3) Procurar Hospedes\n(4) Fazer Check-Out\n(5) Finalizar Atendimento")
     print(poli)
+
     opcao = input("=> ")
-    if opcao == '1':
+    if not(opcao in funcoes):
+        print("Digite uma opção válida.\n Uma das opções do MENU.")
+
+    elif opcao == '1':
         varnome = input('Digite o seu nome: ').title()
         while True:
             vartelefone = input('Digite o seu telefone: ')
@@ -51,8 +56,11 @@ while True:
             hospedes.append(dados)
 
     elif opcao == '2':
-        for hospede in hospedes:
-            print("Nome: " + hospede["nome"] + " CPF: " + hospede["cpf"] + " Telefone: " + hospede["telefone"])
+        if len(hospedes) == 0:
+            print(f"{poli}\n******************* NÃO HÁ HÓSPEDES ******************\n{poli}")
+        else:
+            for hospede in hospedes:
+                print("Nome: " + hospede["nome"] + " CPF: " + hospede["cpf"] + " Telefone: " + hospede["telefone"])
 
     elif opcao == '3':
         if len(hospedes) == 0:
