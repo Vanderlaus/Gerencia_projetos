@@ -14,9 +14,9 @@
 - [x] Verificação ISBN
 
 * Cadastro de Hospedes
-- [ ] Fazer Check-In > Dieter
-- [ ] Relatório Hospedes > Daniel
-- [ ] Procurar Hospedes > Thiago
-- [ ] Fazer Check-Out > Vander
-- [ ] Finalizar Atendimento
-- [ ] Validador de CPF > João
+- [x] Fazer Check-In > Dieter
+- [x] Relatório Hospedes > Daniel
+- [x] Procurar Hospedes > Thiago
+- [x] Fazer Check-Out > Vander
+- [x] Fazer testes > Luiza
+- [x] Validador de CPF > João
