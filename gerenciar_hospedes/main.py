@@ -3,27 +3,30 @@ CPFS = ["00000000000","11111111111", "22222222222", "33333333333", "44444444444"
 hospedes = []
 funcoes = ['1','2','3','4','5']
 poli = "="*50
-espaco = " "*21
-print(f"{poli}\n{espaco}MENU DO MOTEL\n{poli}")
-print(f"{espaco}MENU{espaco}".center(50,"="))
+espaco = " "*10
+espaco1 = " "*12
+
+print(f"{poli}\n{espaco1}MOTEL QUATRO ABACATINHOS :)\n{poli}")
+print(f"{espaco}Cadastro de Hospedes{espaco}".center(50,"="))
 
 while True:
+    print(poli)
     print(f"(1) Fazer check-In\n(2) Relatório Hospedes\n(3) Procurar Hospedes\n(4) Fazer Check-Out\n(5) Finalizar Atendimento")
     print(poli)
     opcao = input("=> ")
     if not(opcao in funcoes):
-        print("Digite uma opção válida.\n Uma das opções do MENU.")
-
+        print("Digite uma opção válida.\n Uma das opções do Cadastro.")
     elif opcao == '1':
-        varnome = input('Digite o seu nome: ').title()
+        varnome = input('Nome Completo: ').title()
         while True:
-            vartelefone = input('Digite o seu telefone(ddxxxxxxxxx): ')
+            vartelefone = input('Telefone com DDD: ')
             if not(vartelefone.isnumeric()):
-                print('Isso não é numero!')
+
+                print('Somente números!')
             else:
                 break
         while True:
-            varcpf = input('Digite seu CPF (xxx.xxx.xxx-xx): ')
+            varcpf = input('CPF: ')
 
             hasError = False
             # Limpa o cpf, retira pontos traços e tudo que não seja um número
@@ -47,25 +50,26 @@ while True:
             if hasError:
                 print(f"{poli}CPF inválido!!{poli}")
             else: 
-                print(f'{poli}Hospede cadastrado com sucesso!!{poli}')
+                print(f"{espaco}Hospede cadastrado com sucesso{espaco}".center(50,"="))
                 dados = {
                     'nome': varnome, 
                     'cpf': varcpf,
                     'telefone': vartelefone
                 }
-                hospedes.append(dados)
+                hospedes.append(dados) 
                 break
 
     elif opcao == '2':
         if len(hospedes) == 0:
-            print(f"{poli}\n******************* NÃO HÁ HÓSPEDES ******************\n{poli}")
+            print(f"{espaco}NÃO HÁ HÓSPEDES{espaco}".center(50,"="))
         else:
             for hospede in hospedes:
-                print("Nome: " + hospede["nome"] + " CPF: " + hospede["cpf"] + f" Telefone: ({hospede['telefone'][0:2]}) {hospede['telefone'][2:]}")
+                print("Nome: " + hospede["nome"] + " CPF: " + hospede["cpf"] + f" Telefone: ({hospede['telefone'][0:2]}) {hospede['telefone'][2:]}") #transformar em função
+
 
     elif opcao == '3':
         if len(hospedes) == 0:
-            print(f"{poli}\n******************* NÃO HÁ HÓSPEDES ******************\n{poli}")
+            print(f"{espaco}NÃO HÁ HÓSPEDES{espaco}".center(50,"="))
         else:
             hospedeEncontrado = False
             print(">>> BUSCAR HOSPEDE <<<")
@@ -77,26 +81,26 @@ while True:
                     break
 
             if hospedeEncontrado == False:
-                print("Não existe hospede registrado com esse nome.")
+                print("Não existe hospede registrado com esse nome")
 
 
     elif opcao == "4":
         if len(hospedes) == 0:
-            print(f"{poli}\n******************* NÃO HÁ HÓSPEDES ******************\n{poli}")
+            print(f"{espaco}NÃO HÁ HÓSPEDES{espaco}".center(50,"="))
         else:
             for i, v in enumerate(hospedes):
                 print(f"{i} - {v['nome']}")
             while True:
-                indice = input("Digite o indice do hóspede que deseja fazer o CHECKOUT: ")
+                indice = input("Qual hóspede deseja fazer o CHECKOUT: ")
                 if not(indice.isnumeric()):
                     print("Letras não sao validas como opção!")
                 elif int(indice) >= len(hospedes):
-                    print("Indice nao existe!")
+                    print("Hospede não existe!")
                 else:
-                    print("Checkout realizado com sucesso".center(50, '='))
+                    print(" Checkout realizado com sucesso ".center(50, '='))
                     hospedes.pop(int(indice))
                     break
 
     elif opcao == '5':
-        print('Saindo do programa'.center(50, "*"))
+        print(' Beijo, tchau, tchau :D '.center(50, "*"))
         break
